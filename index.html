@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <ul class="nav-links media" id="nav-links">
+      <li class="nav-link">
+        <a href="#element1" class="nav-text">Marvel</a>
+      </li>
+      <li class="nav-link">
+        <a href="#element2" class="nav-text">DC</a>
+      </li>
+      <li class="nav-link">
+        <a href="#element3" class="nav-text">StarWars</a>
+      </li>
+    </ul>
+    <div class="mode"></div>
+
+    <button class="menu" id="menu">
+      <span class="menu-item"></span>
+    </button>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="cards-wrapper" id="element1">
+        <h1 class="cards-title">Marvel</h1>
+        <div class="cards" id="marvel">
+
+        </div>
+      </div>
+      <div class="cards-wrapper" id="element2">
+        <h1 class="cards-title">DC</h1>
+        <div class="cards" id="dc">
+
+        </div>
+      </div>
+      <div class="cards-wrapper" id="element3">
+        <h1 class="cards-title">StarWars</h1>
+        <div class="cards" id="starwars">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal">
+    <div class="modal-wrapper">
+      <form class="modal-form">
+
+        <div class="modal-item">
+          <label for="input" class="modal-text">Количество</label>
+          <input type="number" min="0" class="modal-input" id="input" value="0">
+        </div>
+
+        <div class="modal-item">
+          <p>Цвет</p>
+          <div class="modal-radio">
+            <div class="modal-radio-wrap">
+              <input name="color" type="radio" id="radio-red" class="modal-rb" checked>
+              <label for="radio-red" class="modal-text">Красный</label>
+            </div>
+            <div class="modal-radio-wrap">
+              <input name="color" type="radio" id="radio-blue" class="modal-rb">
+              <label for="radio-blue" class="modal-text">Синий</label>
+            </div>
+            <div class="modal-radio-wrap">
+              <input name="color" type="radio" id="radio-seroburomaline" class="modal-rb">
+              <label for="radio-seroburomaline" class="modal-text">Серобуромалиновый</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-item">
+          <label for="txtarea" class="modal-text">Комментарий</label>
+          <textarea class="modal-textarea" name="" id="txtarea" maxlength="2000"
+            placeholder="Введите комментарий"></textarea>
+        </div>
+
+        <div class="modal-btn">
+          <button type="submit" class="modal-buy btn">Купить</button>
+          <button type="reset" class="modal-cancel btn">Закрыть</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="order">
+    <div class="order-accepted">Заказ принят</div>
+    <button class="order-btn btn">Назад</button>
+  </div>
+
+  <div class="up" hidden>
+    <img src="img/arrow-up.png" alt="up" class="up-img">
+  </div>
+
+  <footer class="footer">
+    <ul class="nav-links">
+      <li class="nav-link">
+        <a href="#element1" class="nav-text">Marvel</a>
+      </li>
+      <li class="nav-link">
+        <a href="#element2" class="nav-text">DC</a>
+      </li>
+      <li class="nav-link">
+        <a href="#element3" class="nav-text">StarWars</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script defer type="module" src="script.js"></script>
+</body>
+
+</html>
